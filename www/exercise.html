@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - RelativityLab</title>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
+    <link href="assets/css/index.css" rel="stylesheet" />
+    <script src="/assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="/assets/js/auth.js"></script>
+</head>
+<body>
+    <header class="m-0 p-0">
+        <div class="navbar">
+            <div class="navbar-items">
+                <button type="button" id="home" class="navbar-transparent-button">
+                    Home
+                </button>
+            </div>
+            <div class="navbar-items">
+                <button type="button" id="playground" class="navbar-transparent-button">
+                    Playground
+                </button>
+            </div>
+            <div class="navbar-items">
+                <button type="button" id="login" class="navbar-button">
+                    Login with Google
+                </button>
+            </div>
+            <div class="navbar-items" id="profile-container"></div>
+        </div>
+    </header>
+    <iframe class="absolute m-0 w-full h-full top-0 bottom-0 left-0 right-0 z-0" src="globe.html"></iframe>
+    <div class="relative mx-auto max-w-screen-lg mt-10 z-10">
+        <h1 class="text-white text-3xl h-full font-bold	drop-shadow-2xl mx-auto mb-8">Exercise</h1>
+        <div class="divide-y divide-stone-100 dark:divide-stone-700 overflow-hidden rounded-lg border border-indigo-200 dark:border-indigo-900 bg-white dark:bg-gray-900 shadow-sm z-10" id="answer-accordion"></div>
+    </div>
+    <script src="/assets/js/exercise.js"></script>
+</body>
+</html>

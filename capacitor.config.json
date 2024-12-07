@@ -1,8 +1,7 @@
 {
     "appId": "com.relativitylab.app",
     "appName": "RelativityLab",
-    "webDir": ".",
-    "bundledWebRuntime": false,
+    "webDir": "www",
     "plugins": {
       "SplashScreen": {
         "launchShowDuration": 3000,

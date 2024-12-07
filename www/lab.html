@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="none" />
+        <meta name="googlebot" content="none" />
+        <title>Playground - RelativityLab</title>
+        <script src="assets/js/webgl-matrix.js"></script>
+        <script src="assets/js/cubeRotator.js"></script>
+        <script src="assets/js/geometryObject.js"></script>
+        <script src="assets/js/initCube.js"></script>
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <link href="assets/css/lab.css" rel="stylesheet">
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <button type="button" tabindex="1" data-target="collapsible-experiment-variables" class="collapsible collapsible-experiment-variables-button">
+            Experiment Variables
+        </button>
+        <div class="collapsible-container collapsible-experiment-variables">
+            <aside id="collapsible-experiment-variables" class="collapsible-content" style="max-height: 0px;">
+                <div class="collapsible-placeholder">
+                    <label>Initial Length: </label>
+                    <div class="input-container">
+                        <span class="input-label">X </span>
+                        <input type="number" tabindex="2" min="0.001" step="0.001" id="length-input-x" value="1" size="1" class="length-input number-input">
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Y </span>
+                        <input type="number" tabindex="3" min="0.001" step="0.001" id="length-input-y" value="1" size="1" class="length-input number-input">
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Z </span>
+                        <input type="number" tabindex="4" min="0.001" step="0.001" id="length-input-z" value="1" size="1" class="length-input number-input">
+                    </div>
+                    <label>Velocity (in times of light speed):</label>
+                    <div class="input-container">
+                        <span class="input-label">X </span>
+                        <input type="number" tabindex="5" step="0.001" id="velocity-input-x" value="0" size="1" class="velocity-input number-input">
+                    </div>
+                    <div>
+                        <input type="range" min="0" max="0.999" step="0.001" value="0" class="velocity-slider" id="velocity-slider-x" />
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Y </span>
+                        <input type="number" tabindex="6 step="0.001" id="velocity-input-y" value="0" size="1" class="velocity-input number-input">
+                    </div>
+                    <div>
+                        <input type="range" min="0" max="0.999" step="0.001" value="0" class="velocity-slider" id="velocity-slider-y"/>
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Z </span>
+                        <input type="number" tabindex="7" step="0.001" id="velocity-input-z" value="0" size="1" class="velocity-input number-input">
+                    </div>
+                    <div>
+                        <input type="range" min="0" max="0.999" step="0.001" value="0" class="velocity-slider" id="velocity-slider-z"/>
+                    </div>
+                    <label>Final Length: </label>
+                    <div class="input-container">
+                        <span class="input-label">X </span>
+                        <input type="number" disabled id="length-output-x" value="1" size="1" class="length-output number-input">
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Y </span>
+                        <input type="number" disabled id="length-output-y" value="1" size="1" class="length-output number-input">
+                    </div>
+                    <div class="input-container">
+                        <span class="input-label">Z </span>
+                        <input type="number" disabled id="length-output-z" value="1" size="1" class="length-output number-input">
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <button type="button" tabindex="8" data-target="collapsible-lab-controls" class="collapsible collapsible-lab-controls-button">
+            Lab Controls
+        </button>
+        <div class="collapsible-container collapsible-lab-controls">
+            <aside id="collapsible-lab-controls" class="collapsible-content" style="max-height: 0px;">
+                <div class="collapsible-placeholder">
+                    <button type="button" id="animate-rotation" class="button-inside-collapsible">
+                        Start/Stop Rotation Animation
+                    </button>
+                    <label>Rotation Velocity:</label>
+                    <div class="input-container">
+                        <input type="number" step="0.01" id="rotation-velocity-input" min="0.01" value="0.1" max="5" size="1" class="labelless-number-input">
+                    </div>
+                    <div>
+                        <input type="range" min="0.01" max="5" step="0.01" value="0.1" id="rotation-velocity-slider"/>
+                    </div>
+                    <label>Resize Cube:</label>
+                    <div class="input-container">
+                        <input type="number" step="0.01" id="resize-cube-input" min="0.05" value="0.4" max="2" size="1" class="labelless-number-input">
+                    </div>
+                    <div>
+                        <input type="range" min="0.05" max="2" step="0.01" value="0.4" id="resize-cube-slider"/>
+                    </div>
+                    <button type="button" id="home" class="button-inside-collapsible">
+                        Back to Home
+                    </button>
+                    <button type="button" id="exercise" class="button-inside-collapsible">
+                        Solve Exercise Questions
+                    </button>
+                </div>
+            </aside>
+        </div>
+        <div id="canvas-holder">
+            <canvas width="2048" height="2048" id="webglcanvas"></canvas>
+        </div>
+        <script src="assets/js/lab.js"></script>
+    </body>
+</html>

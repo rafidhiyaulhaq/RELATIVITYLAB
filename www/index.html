@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>RelativityLab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="none" />
+        <meta name="googlebot" content="none" />
+        <link href="assets/css/tailwind.css" rel="stylesheet" />
+        <link href="assets/css/index.css" rel="stylesheet" />
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+        <script src="/assets/js/auth.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="navbar-items">
+                    <button type="button" id="playground" class="navbar-transparent-button">
+                        Playground
+                    </button>
+                </div>
+                <div class="navbar-items">
+                    <button type="button" id="exercise" class="navbar-transparent-button">
+                        Exercise
+                    </button>
+                </div>
+                <div class="navbar-items">
+                    <button type="button" id="login" class="navbar-button">
+                        Login with Google
+                    </button>
+                </div>
+                <div class="navbar-items" id="profile-container"></div>
+            </div>
+        </header>
+        <section>
+            <div class="iframe-placeholder"></div>
+            <iframe src="globe.html"></iframe>
+            </div>
+            <article>
+                <h1>RelativityLab: Warp Space, Bend Time.</h1>
+                <h2>RelativityLab is a Web-Based Virtual Lab to play and learn about Special Relativity Theory from Physics</h2>
+                <button type="button" id="explore">
+                    Explore RelativityLab
+                </button>
+            </article>
+        </section>
+        <footer>
+            <p>Muhammad Faiz A (18222063)</p>
+            <p class="email">Contact: <a href="mailto:relativitylab@faizath.com">relativitylab@faizath.com</a></p>
+        </footer>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>

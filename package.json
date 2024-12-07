@@ -1,31 +1,40 @@
 {
-  "name": "relativitylabmobile",
-  "version": "1.0.0",
-  "description": "Virtual Lab Mobile Application",
-  "main": "index.html",
-  "scripts": {
-    "start": "npx cap serve",
-    "build": "npx cap sync",
-    "android": "npx cap open android",
-    "ios": "npx cap open ios",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "appId": "com.relativitylab.app",
+  "appName": "RelativityLab",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#ffffff",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#999999",
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "StatusBar": {
+      "style": "dark",
+      "backgroundColor": "#ffffff"
+    }
   },
-  "keywords": [
-    "virtual-lab",
-    "education",
-    "mobile-app"
-  ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@capacitor/android": "^6.2.0",
-    "@capacitor/cli": "^6.2.0",
-    "@capacitor/core": "^6.2.0",
-    "@capacitor/ios": "^6.2.0",
-    "@capacitor/splash-screen": "^6.0.0",
-    "@capacitor/status-bar": "^6.0.0"
+  "server": {
+    "androidScheme": "https"
   },
-  "devDependencies": {
-    "@capacitor/assets": "^3.0.0"
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "ios": {
+    "contentInset": "always",
+    "cordova": {
+      "preferences": {
+        "ScrollEnabled": "false"
+      }
+    }
   }
 }
