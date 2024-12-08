@@ -7,28 +7,15 @@
     android:gravity="center">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/splash"
-        android:scaleType="fitCenter"/>
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/splash"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RELATIVITY"
+        android:text="RelativityLab"
         android:textColor="#FFFFFF"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:layout_marginTop="16dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LAB"
-        android:textColor="#9D7BFF"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"/>
-
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
