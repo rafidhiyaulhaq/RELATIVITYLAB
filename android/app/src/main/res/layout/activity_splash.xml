@@ -3,19 +3,32 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#0A0823"
     android:gravity="center">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/splash"
+        android:scaleType="fitCenter"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RelativityLab"
+        android:text="RELATIVITY"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
         android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAB"
+        android:textColor="#9D7BFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"/>
+
 </LinearLayout>
