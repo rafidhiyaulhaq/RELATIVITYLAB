@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="734f58f3-5e12-4de9-9736-067d8be9ddbc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assets/images/splash-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../assets/images/splash-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-    </list>
+    <list default="true" id="734f58f3-5e12-4de9-9736-067d8be9ddbc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
