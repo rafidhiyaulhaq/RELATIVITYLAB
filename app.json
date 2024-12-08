@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "RelativityLabMobile",
+    "name": "RelativityLab",
     "slug": "RelativityLabMobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,6 +8,11 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0823"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.relativitylab.app"
@@ -26,15 +31,7 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#0A0823"
-        }
-      ]
+      "expo-splash-screen"
     ],
     "experiments": {
       "typedRoutes": true
