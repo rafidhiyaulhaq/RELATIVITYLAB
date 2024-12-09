@@ -6,7 +6,6 @@ node_modules/
 .pnp.js
 
 # Expo
-.expo/
 dist/
 web-build/
 expo-env.d.ts
